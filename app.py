@@ -168,7 +168,7 @@ with tab1:
 with tab2:
   st.header("Predict multiple data:")
 
-  sample_csv = df_final.iloc[:5, :-1].to_csv(index=False).encode('utf-8')
+  sample_csv = df_final.to_csv(index=False).encode('utf-8')
 
   st.write("")
   st.download_button("Download CSV Example", data=sample_csv, file_name='sample_heart_disease_parameters.csv', mime='text/csv')
