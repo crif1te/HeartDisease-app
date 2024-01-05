@@ -6,7 +6,7 @@ import random
 from generate_ds import generate_random_dataframe
 import time 
 
-model = pickle.load(open("xgboost_model.pkl", 'rb'))
+model = pickle.load(open("rf_model_oversampling.pkl", 'rb'))
 
 number = random.randint(5, 100)
 df_final = generate_random_dataframe(number)
